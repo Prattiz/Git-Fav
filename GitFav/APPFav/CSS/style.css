@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --text-color:#303030;
+    --primary-color: #42d3ff;
+    --bg-color:rgb(221, 235, 235);
+    --H-h1: rgb(68, 65, 65);
+    --tableC:#303030;
+    --F-bg: #eee
+    --S-bg: #fff
+}
+
+.darkM{
+    --text-color:rgb(226, 226, 226);
+    --primary-color: #092D38;
+    --bg-color: #000;
+    --tableC: #E1E1E6;  
+    --H-h1: rgb(252, 247, 247);
+    --F-bg:rgba(6, 22, 27, 0.50);
+    --S-bg: #06181C;
+
+}
+
+.darkM tbody, .darkM table, .darkM tr{
+    border-radius: .8rem;
+   
+
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color:var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+button{
+    border:none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0 8.7rem 0;
+    
+}
+
+header h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--H-h1);
+    margin-right:22rem
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+table *{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    
+}
+
+table th{
+    background-color: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+    color: var(--tableC);
+}
+
+table th:first-child{
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child{
+    border-top-right-radius: .4rem;
+}
+
+
+table td{
+    padding: 1.5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--F-bg);
+}
+
+tbody tr{
+    background-color: var(--S-bg); 
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+td.user p{
+    font-weight: bold;
+}
+
+td .remove{
+    background: none;
+    color: rgb(176, 53, 53);
+    font-weight: bold;
+
+}
+
+
+
+
+#app{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.changeA{
+    background: none;
+    position: absolute;
+    left:4%;
+    top:5%;
+}
+.changeA img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+    
+    overflow: hidden;
+    border-width: 0;
+    clip:rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.gitSearch{
+    display: flex;
+    align-items: center;
+   
+}
+
+.gitSearch input{
+    height: 3.2rem;
+    border:1px solid #ccc;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0 .8rem;
+    width: 46.2rem;
+    margin-right: .2rem;
+}
+
+.gitSearch button{
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+    border-radius: 0 .4rem .4rem 0;
+    padding: 1.2rem;
+    background-color: #161616;   
+}
+
+#changeM{
+    background: none;
+}
+
+.gitSearch button:hover{
+    filter: brightness(1.1);
+}
+
+td.user img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
